@@ -5,14 +5,17 @@ var API = require('./api-functions'),
 
     searchQueries = [
                      "retweet to win -vote -filter:retweets OR RT to win -vote -filter:retweets",
-                     "retweet 2 win -vote -filter:retweets OR RT 2 win -vote -filter:retweets"
+                     "retweet 2 win -vote -filter:retweets OR RT 2 win -vote -filter:retweets",
+                     "giveaway rt OR retweet",
+                     "sweepstakes rt OR retweet",
+                     "retweet win OR RT win"
                     ],
 
     // "Specifies what type of search results you would prefer to receive. The current default is “mixed.” Valid values include:"
     // Default: "recent"   (return only the most recent results in the response)
     //          "mixed"    (Include both popular and real time results in the response)
     //          "popular"  (return only the most popular results in the response)
-    RESULT_TYPE = "mixed",
+    RESULT_TYPE = "recent",
 
     // Minimum amount of retweets a tweet needs before we retweet it.
     // - Significantly reduces the amount of fake contests retweeted and stops
